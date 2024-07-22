@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: darkolivegreen;
+}
+
+.carousel-item img {
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+  }
+
+.navbar-brand small {
+    font-size: 0.8em; /* Ajusta el tamaño de la fuente si es necesario */
+    color: #6c757d;  /* Ajusta el color si es necesario */
+  }
