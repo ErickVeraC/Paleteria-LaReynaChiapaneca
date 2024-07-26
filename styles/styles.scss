@@ -6,8 +6,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: darkolivegreen;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
 .carousel-item img {
@@ -19,3 +20,71 @@ body {
     font-size: 0.8em; /* Ajusta el tamaño de la fuente si es necesario */
     color: #6c757d;  /* Ajusta el color si es necesario */
   }
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-color: #f0f8ff;
+}
+
+.ice-cream-ball {
+    position: absolute;
+    bottom: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Crear múltiples bolas de helado con diferentes retrasos y posiciones */
+.ice-cream-ball:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.ice-cream-ball:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.ice-cream-ball:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.ice-cream-ball:nth-child(4) {
+    left: 70%;
+    animation-delay: 6s;
+}
+
+.ice-cream-ball:nth-child(5) {
+    left: 90%;
+    animation-delay: 8s;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Ejemplo de contenido */
+h1 {
+    text-align: center;
+    color: #333;
+}
