@@ -1,9 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100vw;
+// Variables de color
+$verde-chiapaneco: #70BF44;
+$verde-claro-chiapaneco: #A6CE39;
+$morado-chiapaneco: #A3238E;
+$azul-chiapaneco: #4AC8F5;
 
+
+// tipografía
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+
+.playwrite-ar-title {
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .playwrite-ar-nav {
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  
+// Estilos generales
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
 }
 
 body {
@@ -12,104 +38,120 @@ body {
   font-family: Arial, sans-serif;
 }
 
+// Navbar
+.bg-navbar {
+
+    background-image: url('/Images/Fondo\ navbar.png'); // Asegúrate de colocar la imagen en la ruta correcta
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-text {
+  color: $morado-chiapaneco;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-link {
+  &:hover {
+    color: $morado-chiapaneco !important;
+  }
+}
+
+// Carousel
 .carousel-item img {
-    height: 500px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
-  }
+  height: 500px; // Ajusta la altura según tus necesidades
+  object-fit: cover; // Asegura que la imagen cubra el contenedor
+}
 
-.navbar-brand small {
-    font-size: 0.8em; /* Ajusta el tamaño de la fuente si es necesario */
-    color: #6c757d;  /* Ajusta el color si es necesario */
-  }
-
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-    background-color: #f0f8ff;
+// Background
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #f0f8ff;
 }
 
 .ice-cream-ball {
-    position: absolute;
-    bottom: 100%;
-    width: 50px;
-    height: 50px;
-    background-color: #ff69b4;
-    border-radius: 50%;
-    animation: fall 10s linear infinite;
+  position: absolute;
+  bottom: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: #ff69b4;
+  border-radius: 50%;
+  animation: fall 10s linear infinite;
 }
 
 @keyframes fall {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-    }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
 }
 
-/* Crear múltiples bolas de helado con diferentes retrasos y posiciones */
+// Crear múltiples bolas de helado con diferentes retrasos y posiciones
 .ice-cream-ball:nth-child(1) {
-    left: 10%;
-    animation-delay: 0s;
+  left: 10%;
+  animation-delay: 0s;
 }
-
 .ice-cream-ball:nth-child(2) {
-    left: 30%;
-    animation-delay: 2s;
+  left: 30%;
+  animation-delay: 2s;
 }
-
 .ice-cream-ball:nth-child(3) {
-    left: 50%;
-    animation-delay: 4s;
+  left: 50%;
+  animation-delay: 4s;
 }
-
 .ice-cream-ball:nth-child(4) {
-    left: 70%;
-    animation-delay: 6s;
+  left: 70%;
+  animation-delay: 6s;
 }
-
 .ice-cream-ball:nth-child(5) {
-    left: 90%;
-    animation-delay: 8s;
+  left: 90%;
+  animation-delay: 8s;
 }
 
+// Content
 .content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
 }
 
-/* Ejemplo de contenido */
+// Example content
 h1 {
-    text-align: center;
-    color: #333;
+  text-align: center;
+  color: #333;
 }
 
 // Sabores preferidos
 .card-img-top-wrapper {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    position: relative;
-  }
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
 
-  .card-img-top {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-  }
+.card-img-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
 
-  .row-cols-lg-4 .col:nth-last-child(-n+3) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.row-cols-lg-4 .col:nth-last-child(-n+3) {
+  margin-left: auto;
+  margin-right: auto;
+}

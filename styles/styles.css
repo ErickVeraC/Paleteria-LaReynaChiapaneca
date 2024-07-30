@@ -1,4 +1,18 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap");
+.playwrite-ar-title {
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-ar-nav {
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,15 +26,28 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.carousel-item img {
-  height: 500px; /* Ajusta la altura según tus necesidades */
-  -o-object-fit: cover;
-     object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+.bg-navbar {
+  background-image: url("/Images/Fondo navbar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.navbar-brand small {
-  font-size: 0.8em; /* Ajusta el tamaño de la fuente si es necesario */
-  color: #6c757d; /* Ajusta el color si es necesario */
+.top-text {
+  color: #A3238E;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #A3238E !important;
+}
+
+.carousel-item img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .background {
@@ -52,7 +79,6 @@ body {
     transform: translateY(100vh) rotate(360deg);
   }
 }
-/* Crear múltiples bolas de helado con diferentes retrasos y posiciones */
 .ice-cream-ball:nth-child(1) {
   left: 10%;
   animation-delay: 0s;
@@ -84,7 +110,6 @@ body {
   padding: 20px;
 }
 
-/* Ejemplo de contenido */
 h1 {
   text-align: center;
   color: #333;
