@@ -4,6 +4,18 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: #70BF44;
+}
+
+.playwrite-ar-text {
+  font-family: "Playwrite AR", serif;
+  color: #A6CE39;
+}
+
+.playwrite-ar-subtitle {
+  font-family: "Playwrite AR", serif;
+  font-weight: 400;
+  color: #A3238E;
 }
 
 .playwrite-ar-nav {
@@ -11,6 +23,7 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  color: #4AC8F5;
 }
 
 * {
@@ -40,8 +53,27 @@ body {
   text-align: center;
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+}
 .nav-link:hover {
   color: #A3238E !important;
+}
+
+.nav-link img {
+  margin-right: 5px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.content-with-margin {
+  margin-top: 18vh;
 }
 
 .carousel-item img {
@@ -58,15 +90,12 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  background-color: #f0f8ff;
+  background-color: #FEFFFA;
 }
 
 .ice-cream-ball {
   position: absolute;
   bottom: 100%;
-  width: 50px;
-  height: 50px;
-  background-color: #ff69b4;
   border-radius: 50%;
   animation: fall 10s linear infinite;
 }
@@ -81,27 +110,42 @@ body {
 }
 .ice-cream-ball:nth-child(1) {
   left: 10%;
-  animation-delay: 0s;
+  background-color: #EFDBA9;
+  width: 70px;
+  height: 70px;
+  animation-delay: 4s;
 }
 
 .ice-cream-ball:nth-child(2) {
   left: 30%;
-  animation-delay: 2s;
+  background-color: #91AE40;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
 }
 
 .ice-cream-ball:nth-child(3) {
   left: 50%;
-  animation-delay: 4s;
+  background-color: #ff69b4;
+  width: 90px;
+  height: 90px;
+  animation-delay: 6s;
 }
 
 .ice-cream-ball:nth-child(4) {
   left: 70%;
-  animation-delay: 6s;
+  background-color: #C8E48F;
+  width: 50px;
+  height: 50px;
+  animation-delay: 8s;
 }
 
 .ice-cream-ball:nth-child(5) {
   left: 90%;
-  animation-delay: 8s;
+  background-color: #844E20;
+  width: 160px;
+  height: 160px;
+  animation-delay: 2s;
 }
 
 .content {
@@ -137,4 +181,10 @@ h1 {
 .row-cols-lg-4 .col:nth-last-child(-n+3) {
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn-send {
+  background-color: #70BF44;
+  color: #FEFFFA;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

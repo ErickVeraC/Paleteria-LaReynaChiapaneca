@@ -4,27 +4,37 @@ $verde-claro-chiapaneco: #A6CE39;
 $morado-chiapaneco: #A3238E;
 $azul-chiapaneco: #4AC8F5;
 
-
-// tipografía
+// Tipografía
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
 
 .playwrite-ar-title {
-    font-family: "Playwrite AR", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .playwrite-ar-nav {
-    font-family: "Playwrite AR", cursive;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $verde-chiapaneco;
+}
 
-  
+.playwrite-ar-text {
+  font-family: 'Playwrite AR', serif;
+  color: $verde-claro-chiapaneco;
+}
+
+.playwrite-ar-subtitle {
+  font-family: 'Playwrite AR', serif;
+  font-weight: 400;
+  color: $morado-chiapaneco;
+}
+
+.playwrite-ar-nav {
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: $azul-chiapaneco;
+}
+
 // Estilos generales
-
 * {
   margin: 0;
   padding: 0;
@@ -40,11 +50,10 @@ body {
 
 // Navbar
 .bg-navbar {
-
-    background-image: url('/Images/Fondo\ navbar.png'); // Asegúrate de colocar la imagen en la ruta correcta
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('/Images/Fondo\ navbar.png'); // Asegúrate de colocar la imagen en la ruta correcta
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .top-text {
@@ -55,9 +64,29 @@ body {
 }
 
 .nav-link {
+  display: flex;
+  align-items: center;
+
   &:hover {
     color: $morado-chiapaneco !important;
   }
+}
+
+// Estilo para las imágenes en los enlaces de navegación
+.nav-link img {
+  margin-right: 5px;
+}
+
+// Navbar fija en la parte superior
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; // Asegúrate de que esté sobre otros elementos
+}
+
+.content-with-margin {
+  margin-top: 18vh; // Esto establecerá el margen superior al 10% de la altura de la ventana
 }
 
 // Carousel
@@ -75,15 +104,12 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  background-color: #f0f8ff;
+  background-color: #FEFFFA;
 }
 
 .ice-cream-ball {
   position: absolute;
   bottom: 100%;
-  width: 50px;
-  height: 50px;
-  background-color: #ff69b4;
   border-radius: 50%;
   animation: fall 10s linear infinite;
 }
@@ -100,23 +126,38 @@ body {
 // Crear múltiples bolas de helado con diferentes retrasos y posiciones
 .ice-cream-ball:nth-child(1) {
   left: 10%;
-  animation-delay: 0s;
+  background-color: #EFDBA9;
+  width: 70px;
+  height: 70px;
+  animation-delay: 4s;
 }
 .ice-cream-ball:nth-child(2) {
   left: 30%;
-  animation-delay: 2s;
+  background-color: #91AE40;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
 }
 .ice-cream-ball:nth-child(3) {
   left: 50%;
-  animation-delay: 4s;
+  background-color: #ff69b4;
+  width: 90px;
+  height: 90px;
+  animation-delay: 6s;
 }
 .ice-cream-ball:nth-child(4) {
   left: 70%;
-  animation-delay: 6s;
+  background-color: #C8E48F;
+  width: 50px;
+  height: 50px;
+  animation-delay: 8s;
 }
 .ice-cream-ball:nth-child(5) {
   left: 90%;
-  animation-delay: 8s;
+  background-color: #844E20;
+  width: 160px;
+  height: 160px;
+  animation-delay: 2s;
 }
 
 // Content
@@ -154,4 +195,13 @@ h1 {
 .row-cols-lg-4 .col:nth-last-child(-n+3) {
   margin-left: auto;
   margin-right: auto;
+}
+
+
+// Formulario de contacto
+
+.btn-send {
+  background-color: $verde-chiapaneco;
+  color: #FEFFFA;
+  width: 100%;
 }
