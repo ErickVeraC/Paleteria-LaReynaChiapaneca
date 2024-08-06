@@ -6,13 +6,27 @@ $azul-chiapaneco: #4AC8F5;
 
 // Tipografía
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
-.playwrite-ar-title {
-  font-family: "Playwrite AR", cursive;
-  font-optical-sizing: auto;
+.delius-regular {
+  font-family: "Delius", cursive;
   font-weight: 400;
   font-style: normal;
   color: $verde-chiapaneco;
+}
+
+.delius-subtitle {
+  font-family: "Delius", cursive;
+  font-weight: 200;
+  font-style: normal;
+  color: #212322;
+}
+
+.delius-p {
+  font-family: "Delius", cursive;
+  font-weight: 150;
+  font-style: normal;
+  color: #212322;
 }
 
 .playwrite-ar-text {
@@ -27,7 +41,7 @@ $azul-chiapaneco: #4AC8F5;
 }
 
 .playwrite-ar-nav {
-  font-family: "Playwrite AR", cursive;
+  font-family: "Delius", cursive;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
