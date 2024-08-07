@@ -162,7 +162,7 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  background: linear-gradient(to top, #fcfcf7 15%, rgb(229, 245, 250));
+  background: linear-gradient(to top, #fcfcf7 15%, rgb(18, 193, 247));
 }
 
 .ice-cream-ball {
@@ -268,7 +268,7 @@ h1 {
 
 .fixed-whatsapp {
   position: fixed;
-  bottom: 9vh; /* Ajusta el espacio desde el borde inferior según tus necesidades */
+  bottom: 18vh; /* Ajusta el espacio desde el borde inferior según tus necesidades */
   right: 2vw; /* Ajusta el espacio desde el borde derecho según tus necesidades */
 
   padding: 10px; /* Espacio interno para mejorar la apariencia */
