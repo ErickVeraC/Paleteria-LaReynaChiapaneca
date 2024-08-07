@@ -29,18 +29,6 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-navbar mb-3 ps-3 pe-3 fixed-top">
       <div class="container-fluid">
-        <a
-          class="navbar-brand d-flex flex-column align-items-center"
-          href="index.html"
-        >
-          <img
-            src="/Images/Logo la reyna chiapaneca.png"
-            alt="Logo"
-            class="d-inline-block"
-            style="width: 40px; height: auto"
-          />
-          <span class="top-text delius-regular">La Reyna Chiapaneca</span>
-        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -59,7 +47,7 @@
           <ul class="navbar-nav m-3">
             <li class="nav-item">
               <a
-                class="nav-link text-white playwrite-ar-nav m-3"
+                class="nav-link playwrite-ar-nav m-3"
                 aria-current="page"
                 href="index.html"
               >
@@ -72,10 +60,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link text-white playwrite-ar-nav m-3"
-                href="#ourFavourites"
-              >
+              <a class="nav-link playwrite-ar-nav m-3" href="#ourFavourites">
                 <img
                   src="/Images/Logo vector FEFFFA.png"
                   alt="Nuestros Favoritos"
@@ -85,10 +70,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link text-white playwrite-ar-nav m-3"
-                href="#sucursales"
-              >
+              <a class="nav-link playwrite-ar-nav m-3" href="#sucursales">
                 <img
                   src="/Images/Logo vector FEFFFA.png"
                   alt="Sucursales"
@@ -98,10 +80,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link text-white playwrite-ar-nav m-3"
-                href="#contactanos"
-              >
+              <a class="nav-link playwrite-ar-nav m-3" href="#contactanos">
                 <img
                   src="/Images/Logo vector FEFFFA.png"
                   alt="Contáctanos"
@@ -115,33 +94,58 @@
       </div>
     </nav>
 
-    <article class="content-with-margin">
-      <div class="container-fluid p-3">
-        <h2 class="text-center delius-regular mb-4">
-          ¡Bienvenidos a La Reyna Chiapaneca!
-        </h2>
-        <p class="text-center delius-subtitle mb-4">
-          Desde 2014, La Reyna Chiapaneca se ha comprometido a ser la mejor
-          paletería y nevería de Apizaco. Nuestra misión es satisfacer las
-          expectativas de nuestros clientes, ofreciendo frescura y una variedad
-          de sabores que garantizan la más alta calidad en cada producto. En La
-          Reyna Chiapaneca, nos esforzamos por conquistar, deleitar y satisfacer
-          los paladares más exigentes a través de la innovación constante.
-          Nuestro equipo trabaja con pasión y dedicación, siempre enfocados en
-          brindar un servicio amable y honesto. Valoramos el respeto, el trabajo
-          en equipo, la amabilidad, la pasión, la honestidad, el compromiso y el
-          servicio al cliente. Estos valores son la base de nuestra empresa y
-          nos guían en cada paso que damos.
-        </p>
-        <h5 class="text-center delius-regular">
-          ¡Gracias por ser parte de nuestra familia y permitirnos endulzar tus
-          momentos especiales!
-        </h5>
-      </div>
-    </article>
-
+    <!-- Logo -->
     <section>
-      <!--Fondo de bolas de helado-->
+      <div class="logo-fixed">
+        <a
+          class="navbar-brand d-flex flex-column align-items-center"
+          href="index.html"
+        >
+          <img
+            src="/Images/Logo la reyna chiapaneca.png"
+            alt="Logo"
+            class="d-inline-block"
+            style="width: 160px; height: auto"
+          />
+        </a>
+      </div>
+    </section>
+
+    <header class="content-with-margin">
+      <div class="container-fluid p-3">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h1 aria-label="La Reyna Chiapaneca - Paleterías y neverías"></h1>
+            <img
+              src="/Images/Logo Bienvenidos a la reyna.png"
+              alt="La Reyna Chiapaneca"
+              class="img-fluid mb-4"
+            />
+            <p class="text-center delius-subtitle mb-4">
+              Desde 2014, La Reyna Chiapaneca se ha comprometido a ser la mejor
+              paletería y nevería de Apizaco. Nuestra misión es satisfacer las
+              expectativas de nuestros clientes, ofreciendo frescura y una
+              variedad de sabores que garantizan la más alta calidad en cada
+              producto. En La Reyna Chiapaneca, nos esforzamos por conquistar,
+              deleitar y satisfacer los paladares más exigentes a través de la
+              innovación constante. Nuestro equipo trabaja con pasión y
+              dedicación, siempre enfocados en brindar un servicio amable y
+              honesto. Valoramos el respeto, el trabajo en equipo, la
+              amabilidad, la pasión, la honestidad, el compromiso y el servicio
+              al cliente. Estos valores son la base de nuestra empresa y nos
+              guían en cada paso que damos.
+            </p>
+            <h5 class="text-center quicksand-flavor-small">
+              ¡Gracias por ser parte de nuestra familia y permitirnos endulzar
+              tus momentos especiales!
+            </h5>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Background-->
+    <section>
       <div class="background">
         <div class="ice-cream-ball"></div>
         <div class="ice-cream-ball"></div>
@@ -149,15 +153,60 @@
         <div class="ice-cream-ball"></div>
         <div class="ice-cream-ball"></div>
       </div>
+    </section>
+
+    <section>
+      <!--Fondo de bolas de helado-->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-8">
             <!-- Carrusel de imágenes -->
             <div
-              id="carouselExampleSlidesOnly"
+              id="carouselExampleIndicators"
               class="carousel slide"
               data-bs-ride="carousel"
+              data-bs-interval="3000"
             >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+              </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
@@ -194,7 +243,38 @@
                     alt="Fifth slide"
                   />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="/Images/Banner de publicidad2.png"
+                    alt="Sixth slide"
+                  />
+                </div>
               </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
@@ -202,7 +282,7 @@
     </section>
 
     <section class="container-fluid p-0 mb-3" id="ourFavourites">
-      <h3 class="m-3 text-center delius-regular">
+      <h3 class="m-3 text-center quicksand-flavor-medium">
         Ven y conoce nuestros sabores estrellas
       </h3>
       <div class="row justify-content-center">
@@ -214,7 +294,7 @@
                   <img src="/Images/Nuez.png" class="card-img-top" alt="Nuez" />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Nuez</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">Nuez</h5>
                   <p class="card-text delius-p">
                     Deliciosamente cremoso, nuestro helado de nuez está repleto
                     de trozos crujientes que te harán disfrutar cada bocado.
@@ -234,7 +314,9 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Chocolate ferrero</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">
+                    Chocolate ferrero
+                  </h5>
                   <p class="card-text delius-p">
                     Sumérgete en la rica y cremosa experiencia del helado de
                     chocolate Ferrero. Con una mezcla indulgente de chocolate de
@@ -255,7 +337,7 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">
+                  <h5 class="card-title quicksand-flavor-bigger">
                     Queso con zarzamora
                   </h5>
                   <p class="card-text delius-p">
@@ -277,7 +359,7 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Chocorrol</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">Chocorrol</h5>
                   <p class="card-text delius-p">
                     Sumérgete en la indulgencia con nuestro helado de Chocorrol.
                     Una mezcla deliciosa de chocolate y vainilla, inspirada en
@@ -296,7 +378,7 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">
+                  <h5 class="card-title quicksand-flavor-bigger">
                     Queso, cajeta y nuez
                   </h5>
                   <p class="card-text delius-p">
@@ -317,7 +399,7 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Maracuya</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">Maracuya</h5>
                   <p class="card-text delius-p">
                     Refrescante y exótico, el helado de maracuyá es perfecto
                     para quienes buscan un sabor tropical. Cada bocado es una
@@ -337,7 +419,9 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Cola de tigre</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">
+                    Cola de tigre
+                  </h5>
                   <p class="card-text delius-p">
                     Disfruta de la exquisita combinación de sabores en nuestro
                     helado Cola de Tigre. Una mezcla de cremoso chocolate y
@@ -358,7 +442,9 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Pay de limón</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">
+                    Pay de limón
+                  </h5>
                   <p class="card-text delius-p">
                     Disfruta de la frescura y el sabor cítrico del helado de pay
                     de limón. Con una base cremosa de helado de limón y pequeños
@@ -379,7 +465,7 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Nescafe</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">Nescafe</h5>
                   <p class="card-text delius-p">
                     Para los amantes del café, nuestro helado de Nescafé es la
                     elección perfecta. Elaborado con el sabor auténtico y
@@ -400,7 +486,9 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Frutos secos</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">
+                    Frutos secos
+                  </h5>
                   <p class="card-text delius-p">
                     Nuestro helado de frutos secos es una deliciosa mezcla de
                     cremosidad y crujientes trozos de almendras, nueces y
@@ -421,7 +509,7 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Pistache</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">Pistache</h5>
                   <p class="card-text delius-p">
                     El helado de pistache es una verdadera joya para los amantes
                     de los sabores gourmet. Hecho con auténticos pistaches,
@@ -442,7 +530,9 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title delius-subtitle">Fresas con crema</h5>
+                  <h5 class="card-title quicksand-flavor-bigger">
+                    Fresas con crema
+                  </h5>
                   <p class="card-text delius-p">
                     Un clásico que nunca pasa de moda. Nuestro helado de fresas
                     con crema combina la dulzura de las fresas frescas con la
@@ -459,7 +549,9 @@
     <!--Seccion de sucursales-->
     <section id="sucursales" class="py-5">
       <div class="container">
-        <h2 class="text-center delius-regular mb-4">Nuestras Sucursales</h2>
+        <h2 class="text-center quicksand-flavor-medium mb-4">
+          Nuestras Sucursales
+        </h2>
 
         <!-- Sucursal 1 -->
         <div class="row justify-content-center mb-5">
@@ -477,7 +569,7 @@
                 ></iframe>
               </div>
               <div class="col-12 col-md-4">
-                <h3 class="delius-regular">San Cosme</h3>
+                <h3 class="quicksand-flavor-small">San Cosme</h3>
                 <p class="delius-subtitle">
                   Adolfo Lopez Mateos 1 local, Plaza de la Constitución,
                   Xalostoc CP 90460
@@ -503,7 +595,7 @@
                 ></iframe>
               </div>
               <div class="col-12 col-md-4 order-md-1">
-                <h3 class="delius-regular">Santa Rosa</h3>
+                <h3 class="quicksand-flavor-small">Santa Rosa</h3>
                 <p class="delius-subtitle">
                   Avenida Morelos Norte 1221, Apizaco, Tlaxcala CP 90300
                 </p>
@@ -528,7 +620,7 @@
                 ></iframe>
               </div>
               <div class="col-12 col-md-4">
-                <h3 class="delius-regular">16 de Septiembre</h3>
+                <h3 class="quicksand-flavor-small">16 de Septiembre</h3>
                 <p class="delius-subtitle">
                   Avenida Juarez 102, Apizaco, Tlaxcala CP 90300
                 </p>
@@ -553,7 +645,7 @@
                 ></iframe>
               </div>
               <div class="col-12 col-md-4 order-md-1">
-                <h3 class="delius-regular">Francisco I. Madero</h3>
+                <h3 class="quicksand-flavor-small">Francisco I. Madero</h3>
                 <p class="delius-subtitle">
                   Libertad 303 B, Apizaco, Tlaxcala CP 90300
                 </p>
@@ -578,7 +670,7 @@
                 ></iframe>
               </div>
               <div class="col-12 col-md-4">
-                <h3 class="delius-regular">Cuernito</h3>
+                <h3 class="quicksand-flavor-small">Cuernito</h3>
                 <p class="delius-subtitle">
                   Carretera México Veracruz Cuernito Km 140 14, Apizaco,
                   Tlaxcala CP 90300
@@ -604,7 +696,7 @@
                 ></iframe>
               </div>
               <div class="col-12 col-md-4 order-md-1">
-                <h3 class="delius-regular">Huamantla</h3>
+                <h3 class="quicksand-flavor-small">Huamantla</h3>
                 <p class="delius-subtitle">
                   Hidalgo Pte 506, Centro, 90500 Huamantla, Tlax.
                 </p>
@@ -619,7 +711,7 @@
     <section class="container mt-5 mb-5" id="contactanos">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
-          <h2 class="text-center mb-4 delius-regular">Contáctanos</h2>
+          <h2 class="text-center mb-4 quicksand-flavor-medium">Contáctanos</h2>
           <p class="text-center delius-p mb-4">
             Si tienes alguna consulta, te gustaría realizar una cotización,
             saber de las ofertas de trabajo actual o obtener información sobre
@@ -708,9 +800,7 @@
             Queda estrictamente prohibido el uso del color verde chiapaneca en
             relación con otra paletería o marca sin nuestro consentimiento
             previo. Para cualquier consulta, puede contactarnos a través de
-            nuestro correo electrónico: hola@lareynachiapaneca.com. Si está
-            interesado en adquirir una franquicia, por favor contáctenos
-            directamente.
+            nuestro correo electrónico: hola@lareynachiapaneca.com.
           </p>
 
           <p class="small delius-p">
