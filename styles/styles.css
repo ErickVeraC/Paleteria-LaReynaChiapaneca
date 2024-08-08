@@ -132,6 +132,14 @@ body {
      object-fit: contain;
 }
 
+.carousel-background {
+  background-color: #A3238E;
+  padding: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10px;
+}
+
 .background {
   position: fixed;
   top: 0;

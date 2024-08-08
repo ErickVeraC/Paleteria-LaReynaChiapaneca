@@ -153,6 +153,16 @@ body {
 
 }
 
+// Estilos del rectángulo morado para el carrusel
+.carousel-background {
+  background-color: $morado-chiapaneco;
+  padding: 10px; // Ajusta el padding según tus necesidades
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10px;
+
+}
+
 // Background
 .background {
   position: fixed;
