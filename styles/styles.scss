@@ -6,7 +6,6 @@ $azul-chiapaneco: #4AC8F5;
 $hover-color: #fcfcf7;
 
 // Tipografía
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Quicksand:wght@300..700&display=swap');
 
@@ -145,6 +144,57 @@ body {
   margin-top: 18vh; // Esto establecerá el margen superior al 18% de la altura de la ventana
 }
 
+// Logo de la empresa
+.logo-fixed {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  pointer-events: none;
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 160px; // Tamaño inicial
+      height: auto;
+    }
+  }
+
+  // Media query para pantallas medianas
+  @media (max-width: 992px) {
+    top: 10px;
+    right: 10px;
+    left: auto;
+    img {
+      width: 120px; // Ajuste de tamaño para pantallas medianas
+    }
+  }
+
+  // Media query para pantallas pequeñas
+  @media (max-width: 768px) {
+    top: 10px;
+    right: 10px;
+    left: auto;
+    img {
+      width: 80px !important;  // Reducción a la mitad para pantallas pequeñas
+    }
+  }
+
+  // Media query para pantallas muy pequeñas
+  @media (max-width: 576px) {
+    top: 10px;
+    right: 10px;
+    left: auto;
+    img {
+      width: 60px; // Tamaño más pequeño para pantallas muy pequeñas
+    }
+  }
+}
+
+
 // Carousel
 .carousel-item img {
   width: 100%;
@@ -157,8 +207,7 @@ body {
 .carousel-background {
   background-color: $morado-chiapaneco;
   padding: 10px; // Ajusta el padding según tus necesidades
-  padding-left: 100px;
-  padding-right: 100px;
+
   border-radius: 10px;
 
 }

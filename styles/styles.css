@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius&family=Quicksand:wght@300..700&display=swap");
 .quicksand-title-bigger {
@@ -125,6 +124,53 @@ body {
   margin-top: 18vh;
 }
 
+.logo-fixed {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  pointer-events: none;
+}
+.logo-fixed .navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-fixed .navbar-brand img {
+  width: 160px;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .logo-fixed {
+    top: 10px;
+    right: 10px;
+    left: auto;
+  }
+  .logo-fixed img {
+    width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .logo-fixed {
+    top: 10px;
+    right: 10px;
+    left: auto;
+  }
+  .logo-fixed img {
+    width: 80px !important;
+  }
+}
+@media (max-width: 576px) {
+  .logo-fixed {
+    top: 10px;
+    right: 10px;
+    left: auto;
+  }
+  .logo-fixed img {
+    width: 60px;
+  }
+}
+
 .carousel-item img {
   width: 100%;
   height: 500px;
@@ -135,8 +181,6 @@ body {
 .carousel-background {
   background-color: #A3238E;
   padding: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
   border-radius: 10px;
 }
 
