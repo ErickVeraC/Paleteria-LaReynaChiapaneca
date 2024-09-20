@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-image: url("/Images/ReynaBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+} /*# sourceMappingURL=menuStyles.css.map */

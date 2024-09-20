@@ -19,14 +19,14 @@ $hover-color: #fcfcf7;
 
 body {
   margin: 0;
-  overflow-x: hidden; // Para evitar el desplazamiento horizontal
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
-  background-image: url("/Images/ReynaBg.png"); // URL de la imagen de fondo
-  background-size: cover; // Asegura que la imagen cubra todo el contenedor
-  background-position: center; // Centra la imagen de fondo
-  background-repeat: no-repeat; // Evita que la imagen de fondo se repita
-  background-attachment: fixed; // Fija la imagen de fondo
-  min-height: 100vh; // Asegura que el body ocupe al menos el 100% del viewport height
+  background-image: url("/Images/ReynaBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 .quicksand-title-bigger {
   font-family: "Quicksand", sans-serif;
@@ -61,7 +61,7 @@ body {
   font-family: "Delius", cursive;
   font-weight: 200;
   font-style: normal;
-  color: #212322;
+  color: white;
 }
 
 .delius-p {
@@ -158,7 +158,7 @@ body {
     align-items: center;
 
     img {
-      width: 160px; // Tamaño inicial
+      width: 140px;
       height: auto;
     }
   }
@@ -169,7 +169,7 @@ body {
     right: 10px;
     left: auto;
     img {
-      width: 120px; // Ajuste de tamaño para pantallas medianas
+      width: 100px;
     }
   }
 
@@ -179,19 +179,25 @@ body {
     right: 10px;
     left: auto;
     img {
-      width: 80px !important; // Reducción a la mitad para pantallas pequeñas
+      width: 60px !important;
     }
   }
 
-  // Media query para pantallas muy pequeñas
   @media (max-width: 576px) {
     top: 10px;
     right: 10px;
     left: auto;
     img {
-      width: 60px; // Tamaño más pequeño para pantallas muy pequeñas
+      width: 40px;
     }
   }
+}
+
+.main--text {
+  background-color: #333;
+  opacity: 0.5;
+  border-radius: 12px;
+  padding: 1rem;
 }
 
 // Carousel
