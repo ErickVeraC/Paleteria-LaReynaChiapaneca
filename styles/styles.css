@@ -346,3 +346,25 @@ h1 {
   width: 90px;
   height: auto;
 } /*# sourceMappingURL=styles.css.map */
+
+/* Publicaciones Facebbok*/
+.facebook-post {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.facebook-post p {
+  margin: 0 0 10px;
+}
+
+.facebook-post a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.facebook-post a:hover {
+  text-decoration: underline;
+}
